@@ -39,7 +39,6 @@
                             <form action="{{ route('delete_absence', $etudiant->id) }}" method="POST">
                                 @csrf
                                 @method('PATCH')
-                                <!-- Hidden input to send 'null' value when deleting -->
                                 <input type="hidden" name="absence" value="null">
                                 <button type="submit">Réset</button>
                             </form>

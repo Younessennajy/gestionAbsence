@@ -1,14 +1,16 @@
 <?php
 
 namespace App\Models;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Etudiant extends Model
 {
-    // protected $primaryKey = 'id_etudiant';
-
+    // protected $table = 'etudiants';:
+    // protected $primaryKey = 'id';
     protected $fillable = [ 'Groupe', 'CEF', 'Nom', 'Prenom', 'Absence'];
+      use HasFactory;
 
-    // Define relationships or other methods here
+
 }
